@@ -1,67 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  /* Universal selector */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
 }
 
 #msg {
-    color: wheat;
-    margin : 20px 0 10px 0;
+  /* Styles for the message container */
+  color: wheat; /* Text color */
+  margin: 20px 0 10px 0; /* Margin around the element */
 }
 
-h1{
-    color: aliceblue;
-    margin: 20px;
+h1 {
+  /* Styles for the game title */
+  color: aliceblue; /* Text color */
+  margin: 20px; /* Margin around the element */
 }
 
 body {
-    background-color: #011936;
-    text-align: center;
+  /* Styles for the body element */
+  background-color: #011936; /* Background color */
+  text-align: center; /* Center-aligns text */
 }
 
 .container {
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  /* Styles for the game board container */
+  height: 70vh; /* Height of the container */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Centers items horizontally */
+  text-align: center; /* Center-aligns text */
 }
 
 .game {
-    height: 60vmin;
-    width: 60vmin;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5vmin;
+  /* Styles for the game board */
+  height: 60vmin; /* Height of the game board */
+  width: 60vmin; /* Width of the game board */
+  display: flex; /* Flexbox layout */
+  flex-wrap: wrap; /* Allows wrapping of items */
+  justify-content: center; /* Centers items horizontally */
+  gap: 1.5vmin; /* Gap between items */
 }
 
-.box{
-    height: 18vmin;
-    width: 18vmin;
-    border-radius: 1rem;
-    box-shadow: 0 0 1rem rgb(0, 0, 0);
-    font-size: 8vmin;
-    color: #313f23;
-    background-color: #9FC490;
+.box {
+  /* Styles for the game cells */
+  height: 18vmin; /* Height of the cell */
+  width: 18vmin; /* Width of the cell */
+  border-radius: 1rem; /* Rounded corners */
+  box-shadow: 0 0 1rem rgb(0, 0, 0); /* Shadow effect */
+  font-size: 8vmin; /* Font size */
+  color: #313f23; /* Text color */
+  background-color: #9fc490; /* Background color */
 }
 
-#new-btn{
-    padding: 1rem;
-    width: 100px;
-    font-size: 1.25rem;
-    background-color: #b70900;
-    color: #fbff00;
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
+#new-btn {
+  /* Styles for the reset button */
+  padding: 1rem; /* Padding inside the button */
+  width: 100px; /* Width of the button */
+  font-size: 1.25rem; /* Font size */
+  background-color: #b70900; /* Background color */
+  color: #fbff00; /* Text color */
+  border-radius: 1rem; /* Rounded corners */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Centers items horizontally */
 }
 
-#reset-container{
-    display: flex;
-    justify-content: center;
-    margin: -30px 0 0 0;
+#reset-container {
+  /* Styles for the reset button container */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Centers items horizontally */
+  margin: -30px 0 0 0; /* Margin around the element */
 }
 
-.win{
-    margin: 20px 0 20px 0;
+.win {
+  /* Styles for the winner message */
+  margin: 20px 0 20px 0; /* Margin around the element */
 }
 
+/* Media queries for responsive design */
+
+/* Styles for devices with a maximum width of 768px (tablets) */
+@media (max-width: 768px) {
+  .game {
+    height: 80vmin; /* Increase height for smaller screens */
+    width: 80vmin; /* Increase width for smaller screens */
+  }
+  .box {
+    height: 24vmin; /* Adjust cell height */
+    width: 24vmin; /* Adjust cell width */
+    font-size: 10vmin; /* Adjust font size */
+  }
+}
+
+/* Styles for devices with a maximum width of 480px (mobile phones) */
+@media (max-width: 480px) {
+  .game {
+    height: 90vmin; /* Increase height for smaller screens */
+    width: 90vmin; /* Increase width for smaller screens */
+  }
+  .box {
+    height: 28vmin; /* Adjust cell height */
+    width: 28vmin; /* Adjust cell width */
+    font-size: 12vmin; /* Adjust font size */
+  }
+  #new-btn {
+    width: 80px; /* Adjust button width */
+    font-size: 1rem; /* Adjust font size */
+  }
+}
