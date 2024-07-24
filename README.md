@@ -38,7 +38,7 @@ A simple and interactive Tic-Tac-Toe game implemented using HTML, CSS, and JavaS
 
 ## Example Screenshots
 
-![Game Screenshot](path/to/screenshot.png)
+![Game Screenshot](/screenshot.png)
 
 ## Contributing
 
